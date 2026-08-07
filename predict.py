@@ -1,0 +1,43 @@
+from src.predict import predict_sample
+
+sample = {
+    "face_present": 1,
+    "no_of_face": 1,
+    "face_x": 200,
+    "face_y": 180,
+    "face_w": 150,
+    "face_h": 160,
+    "left_eye_x": 220,
+    "left_eye_y": 210,
+    "right_eye_x": 270,
+    "right_eye_y": 210,
+    "nose_tip_x": 245,
+    "nose_tip_y": 240,
+    "mouth_x": 245,
+    "mouth_y": 275,
+    "face_conf": 0.98,
+    "hand_count": 0,
+    "left_hand_x": 0,
+    "left_hand_y": 0,
+    "right_hand_x": 0,
+    "right_hand_y": 0,
+    "hand_obj_interaction": "no",
+    "head_pose": "front",
+    "head_pitch": 0,
+    "head_yaw": 0,
+    "head_roll": 0,
+    "phone_present": 0,
+    "phone_loc_x": 0,
+    "phone_loc_y": 0,
+    "phone_conf": 0,
+    "gaze_on_script": "yes",
+    "gaze_direction": "center",
+    "gazePoint_x": 250,
+    "gazePoint_y": 220,
+    "pupil_left_x": 220,
+    "pupil_left_y": 210,
+    "pupil_right_x": 270,
+    "pupil_right_y": 210
+}
+
+predict_sample(sample)
